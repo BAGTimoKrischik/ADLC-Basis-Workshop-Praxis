@@ -23,9 +23,6 @@ sind und die Bugs für Teilnehmer:innen nicht vorab sichtbar sein dürfen.
 
 ## Nutzung
 
-**Aktuell noch privat** — wird vor dem Workshop öffentlich geschaltet, damit
-Teilnehmer:innen ohne separate Einladung klonen können.
-
 ```
 git clone https://github.com/BAGTimoKrischik/ADLC-Basis-Workshop-Praxis.git
 cd ADLC-Basis-Workshop-Praxis
