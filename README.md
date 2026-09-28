@@ -1,11 +1,13 @@
 # ADLC Praxis: Taschenrechner-Debugging
 
-Übungsmaterial für den Praxis-Teil des **ADLC-Basis-Workshops**. Konzept, Ablauf und
-Teilnehmer-Anleitung stehen im Haupt-Repo `ADLC-Basis-Workshop`:
+Übungsmaterial für den Praxis-Teil des **ADLC-Basis-Workshops**.
 
-- `praxis-konzept.md` – didaktisches Konzept, Bug-Design-Prinzipien, Zeitplan
-- `praxis-anleitung.md` – Phasen-Anleitung für Teilnehmer:innen
 - `setup-praxis.md` – Setup-Checkliste vor dem Workshop
+- `praxis-anleitung.md` – Phasen-Anleitung für Teilnehmer:innen
+
+Das didaktische Konzept (`praxis-konzept.md`) bleibt im Haupt-Repo
+`ADLC-Basis-Workshop`, da es Vortragenden-Hintergrund (Bug-Design-Prinzipien,
+Timing-Begründung) enthält, der für Teilnehmer:innen nicht nötig ist.
 
 ## Branches statt Ordner
 
