@@ -1,32 +1,44 @@
-# ADLC Praxis: Taschenrechner-Debugging
+# Taschenrechner – Runde 2
 
-Übungsmaterial für den Praxis-Teil des **ADLC-Basis-Workshops**. Konzept, Ablauf und
-Teilnehmer-Anleitung stehen im Haupt-Repo `ADLC-Basis-Workshop`:
+Startgerüst für **Phase 3** des ADLC-Praxis-Teils: dieselbe Art von Bugs wie in
+Runde 1, aber mit selbst destilliertem Skill und ≥2 spezialisierten Agenten
+(Reviewer, Coder) fixen. Details zum Ablauf: `praxis-anleitung.md` im Haupt-Repo
+`ADLC-Basis-Workshop`.
 
-- `praxis-konzept.md` – didaktisches Konzept, Bug-Design-Prinzipien, Zeitplan
-- `praxis-anleitung.md` – Phasen-Anleitung für Teilnehmer:innen
-- `setup-praxis.md` – Setup-Checkliste vor dem Workshop
+Gleicher Aufbau wie Runde 1 (Lexer → Parser → Auswerter, Variablen, eingebaute
+Funktionen, Ergebnis-Verlauf), 4 neue Bugs an anderen Stellen — vergleichbar
+schwer, damit der Runde-1/Runde-2-Vergleich in Phase 4 ehrlich ist.
 
-## Branches statt Ordner
+## Voraussetzungen
 
-Dieses Repo hat keinen Code auf `main` — jede Übungsrunde ist ein eigener Branch mit
-den Taschenrechner-Quelldateien direkt im Repo-Root:
+- **JDK 21 (LTS)** installiert. Prüfen mit:
+  ```
+  java -version
+  ```
+- Kein Build-Tool nötig (kein Maven/Gradle) — reines `javac`/`java`.
+- **JUnit-Standalone-Jar** einmalig herunterladen (Ordner `lib/` ist gitignored):
+  ```
+  mkdir -p lib
+  curl -sL -o lib/junit-platform-console-standalone-1.11.4.jar \
+    https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.11.4/junit-platform-console-standalone-1.11.4.jar
+  ```
 
-- **`runde-1`** – Startgerüst für Phase 1 (Baseline-Vibecoding, ohne Skill/Agenten). Start: 5 von 38 Tests grün.
-- **`runde-2`** – Startgerüst für Phase 3 (mit Skill + Agenten). Start: 8 von 38 Tests grün.
-
-Referenzlösung (`loesung/`) und Bug-Antwortschlüssel (`antwortschluessel.md`) bleiben bewusst
-im Haupt-Repo `ADLC-Basis-Workshop`, da sie nur für die Vorbereitung durch Vortragende gedacht
-sind und die Bugs für Teilnehmer:innen nicht vorab sichtbar sein dürfen.
-
-## Nutzung
+## Kompilieren & Testen
 
 ```
-git clone <diese-repo-url>
-cd ADLC-Basis-Workshop-Praxis
-git checkout runde-1   # Phase 1
-# ... später, für Phase 3:
-git checkout runde-2
+javac -cp lib/junit-platform-console-standalone-1.11.4.jar *.java
+java -jar lib/junit-platform-console-standalone-1.11.4.jar execute -cp . --scan-classpath
 ```
 
-Jeder Branch bringt sein eigenes `README.md` mit Kompilier- und Testbefehlen mit.
+Unter Windows `-cp` mit `;` statt `:` trennen, falls mehrere Pfade nötig sind (hier
+reicht ein einzelner Pfad, also ohne Trenner).
+
+**Startzustand: 8 von 38 Tests grün** — das ist der erwartete Übungsstand, kein
+kaputtes Setup.
+
+## Aufgabe (Phase 3, 15 Minuten)
+
+Nutzt den in Phase 2 destillierten Skill und mindestens zwei darauf aufbauende
+Agenten (Reviewer, Coder), kein Ad-hoc-Vibecoding. Bringt so viele JUnit-Tests
+wie möglich zum Bestehen. Ergänzt den Skill währenddessen nicht nachträglich um
+Runde-2-spezifische Bugs.
