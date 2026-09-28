@@ -10,9 +10,9 @@ Was vor dem Workshop bereitstehen muss, damit die Praxis ohne Zeitverlust starte
   ```
 - Kein Build-Tool nötig (kein Maven/Gradle) — das Starter-Projekt läuft mit reinem `javac`/`java`. IntelliJ oder VS Code als Editor genügen.
 - **[Git](https://git-scm.com/downloads) installiert** und das Haupt-Repo [`ADLC-Basis-Workshop`](https://brockhaus-ag@dev.azure.com/brockhaus-ag/KI-Team/_git/ADLC-Basis-Workshop) lokal ausgecheckt.
-- **Praxis-Repository separat ausgecheckt:** Die Übungsrunden liegen in einem eigenen Repository, `ADLC-Basis-Workshop-Praxis` (Zugriff/URL siehe Anmeldesystem des Workshops), nicht mehr als Ordner in diesem Repo. Referenzlösung und Bug-Antwortschlüssel bleiben bewusst im Haupt-Repo (`praxis/loesung/`, `praxis/antwortschluessel.md`) und werden Teilnehmer:innen nicht zugänglich gemacht.
+- **Dieses Repository ausgecheckt, richtiger Branch:** Die Übungsrunden liegen hier als Branches `runde-1` und `runde-2` (nicht auf `main`), getrennt vom Haupt-Repo `ADLC-Basis-Workshop`. Dieses Repo ([`ADLC-Basis-Workshop-Praxis`](https://github.com/BAGTimoKrischik/ADLC-Basis-Workshop-Praxis) auf GitHub) ist **aktuell noch privat** — wird vor dem Workshop öffentlich geschaltet, bis dahin ggf. Zugriff einzeln anfragen. Referenzlösung und Bug-Antwortschlüssel bleiben bewusst im Haupt-Repo (`praxis/loesung/`, `praxis/antwortschluessel.md`) und werden Teilnehmer:innen nicht zugänglich gemacht.
   ```
-  git clone <praxis-repo-url>
+  git clone https://github.com/BAGTimoKrischik/ADLC-Basis-Workshop-Praxis.git
   cd ADLC-Basis-Workshop-Praxis
   git checkout runde-1
   ```
