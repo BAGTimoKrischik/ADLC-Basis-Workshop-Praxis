@@ -15,7 +15,6 @@ Was vor dem Workshop bereitstehen muss, damit die Praxis ohne Zeitverlust starte
   cd ADLC-Basis-Workshop-Praxis
   git checkout runde-1
   ```
-  `runde-2` (nach der Skill-Erstellung) ist ein weiterer Branch im selben Repo.
 - **JUnit-Standalone-Jar einmalig herunterladen** (kein Maven/Gradle nötig, nur eine Jar-Datei) nach `lib/` (Ordner ist gitignored, muss lokal angelegt werden):
   ```
   mkdir -p lib

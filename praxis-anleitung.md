@@ -6,7 +6,7 @@ Setup vorab: `setup-praxis.md`.
 
 - Setup abgeschlossen, Praxis-Repo (`ADLC-Basis-Workshop-Praxis`) ausgecheckt.
 - Branch `runde-1` kompiliert, Start: 5 von 38 Tests grün.
-- Ziel: möglichst viele Tests, nicht zwingend alle 38.
+- Ziel: möglichst viele Tests bestehen (grün), nicht zwingend alle 38.
 
 ## Phase 1 (15 Min): Bugs finden & fixen
 
