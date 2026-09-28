@@ -9,21 +9,20 @@ Was vor dem Workshop bereitstehen muss, damit die Praxis ohne Zeitverlust starte
   java -version
   ```
 - Kein Build-Tool nötig (kein Maven/Gradle) — das Starter-Projekt läuft mit reinem `javac`/`java`. IntelliJ oder VS Code als Editor genügen.
-- **[Git](https://git-scm.com/downloads) installiert** und das Haupt-Repo [`ADLC-Basis-Workshop`](https://brockhaus-ag@dev.azure.com/brockhaus-ag/KI-Team/_git/ADLC-Basis-Workshop) lokal ausgecheckt.
-- **Dieses Repository ausgecheckt, richtiger Branch:** Die Übungsrunden liegen hier als Branches `runde-1` und `runde-2` (nicht auf `main`), getrennt vom Haupt-Repo `ADLC-Basis-Workshop`. Referenzlösung und Bug-Antwortschlüssel bleiben bewusst im Haupt-Repo (`praxis/loesung/`, `praxis/antwortschluessel.md`) und werden Teilnehmer:innen nicht zugänglich gemacht.
+- **[Git](https://git-scm.com/downloads) installiert** und dieses Repository lokal ausgecheckt, Branch `runde-1`:
   ```
   git clone https://github.com/BAGTimoKrischik/ADLC-Basis-Workshop-Praxis.git
   cd ADLC-Basis-Workshop-Praxis
   git checkout runde-1
   ```
   `runde-2` (nach der Skill-Erstellung) ist ein weiterer Branch im selben Repo.
-- **JUnit-Standalone-Jar einmalig herunterladen** (kein Maven/Gradle nötig, nur eine Jar-Datei) nach `lib/` **im Praxis-Repo** (Ordner ist gitignored, muss lokal angelegt werden):
+- **JUnit-Standalone-Jar einmalig herunterladen** (kein Maven/Gradle nötig, nur eine Jar-Datei) nach `lib/` (Ordner ist gitignored, muss lokal angelegt werden):
   ```
   mkdir -p lib
   curl -sL -o lib/junit-platform-console-standalone-1.11.4.jar \
     https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.11.4/junit-platform-console-standalone-1.11.4.jar
   ```
-  Muss pro Branch (`runde-1`, `runde-2`) einmal angelegt werden, da es sich um unabhängige Arbeitsverzeichnisse handelt. Für `loesung/` (hier im Haupt-Repo) weiterhin nach `praxis/lib/`.
+  Muss pro Branch (`runde-1`, `runde-2`) einmal angelegt werden, da es sich um unabhängige Arbeitsverzeichnisse handelt.
 - **Ein Agent-Tool installiert und eingerichtet**, das Skills lesen und mehrere Agenten aus einem Skill heraus orchestrieren kann (z.B. Claude Code, Codex, oder ein anderes Tool mit vergleichbarer Unterstützung). Welches Tool genutzt wird, ist für den Workshop egal.
   - Falls das eigene Tool keine Multi-Agent-Orchestrierung unterstützt oder Unsicherheit besteht: Fallback ist **Claude von der BAG**. Das KI-Team hilft bei Integrationsfragen.
 - **KI-Basiswissen** (Prompting, grundsätzliche Funktionsweise von LLMs) — wird laut Theorie-Teil vorausgesetzt.
