@@ -9,7 +9,7 @@ Was vor dem Workshop bereitstehen muss, damit die Praxis ohne Zeitverlust starte
   java -version
   ```
 - Kein Build-Tool nötig (kein Maven/Gradle) — das Starter-Projekt läuft mit reinem `javac`/`java`. IntelliJ oder VS Code als Editor genügen.
-- **[Git](https://git-scm.com/downloads) installiert** und dieses Repository lokal ausgecheckt, Branch `runde-1`:
+- **[Git](https://git-scm.com/downloads) installiert** und [dieses Repository](https://github.com/BAGTimoKrischik/ADLC-Basis-Workshop-Praxis) lokal ausgecheckt, Branch `runde-1`:
   ```
   git clone https://github.com/BAGTimoKrischik/ADLC-Basis-Workshop-Praxis.git
   cd ADLC-Basis-Workshop-Praxis
